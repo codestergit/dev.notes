@@ -16,6 +16,10 @@
 * [Server](server/readme.md)
     * [nginx](server/nginx.md)
     * [openresty](lang/openresty)
+* [system](system/readme.md)
+    * [linux](system/linux.md)
+    * [centos](system/centos.md)
+    * [ubuntu](system/ubuntu.md)
 
 * [tools](tools/readme.md)
     * [git](tools/git.md)
