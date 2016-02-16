@@ -15,7 +15,7 @@
 
 * [Server](server/readme.md)
     * [nginx](server/nginx.md)
-    * [openresty](lang/openresty)
+    * [openresty](server/openresty.md)
 * [system](system/readme.md)
     * [linux](system/linux.md)
     * [centos](system/centos.md)
