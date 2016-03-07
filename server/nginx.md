@@ -22,3 +22,15 @@ upstream backend {
     server unix:tmp/backends3;
 }
 ```
+
+##开启gzip
+```
+gzip  on;
+gzip_http_version 1.1;
+gzip_disable "MSIE [1-6]\.";
+gzip_vary on;
+gzip_comp_level 2;
+gzip_proxied any;
+gzip_types text/plain application/javascript text/css text/javascript;
+```
+
