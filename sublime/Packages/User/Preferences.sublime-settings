@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/User/laravel (SL).tmTheme",
+	"draw_white_space": "all",
+	"font_size": 16,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"translate_tabs_to_spaces": true
+}

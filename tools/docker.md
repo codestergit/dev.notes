@@ -5,12 +5,12 @@
 > https://github.com/widuu/chinese_docker
 
 ##容器的组成
-容器= cgroup+ namespace+ rootfs+ 容器引擎（用户态工具）
+容器= cgroup+namespace+rootfs+ 容器引擎（用户态工具）
 其中各项的功能分别为：   
-·Cgroup： 资源 控制。  
-·Namespace： 访问 隔离。  
-·rootfs： 文件 系统 隔离。  
-·容器引擎： 生命 周期 控制。  
+·Cgroup： 资源控制。  
+·Namespace： 访问隔离。  
+·rootfs： 文件系统隔离。  
+·容器引擎： 生命周期控制。  
 
 ##Dockerfile
 Dockerfile的第一条有效信息(注释除外)必须是基础镜像信息, 维护者信息紧随其后。

@@ -1,0 +1,45 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"BracketHighlighter",
+		"C Improved",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"Emmet",
+		"GoSublime",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"HTMLBeautify",
+		"Javascript Beautify",
+		"jQuery",
+		"Laravel 4 Snippets",
+		"Laravel 5 Snippets",
+		"Laravel Blade Highlighter",
+		"LESS",
+		"Markdown HTML Preview",
+		"Markdown Preview",
+		"Markmon real-time markdown preview",
+		"nginx",
+		"OpenResty lua snippets",
+		"Origami",
+		"Package Control",
+		"Pandoc",
+		"PHP-Twig",
+		"Phpcs",
+		"PhpDoc",
+		"phpfmt",
+		"PHPUnit",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"Terminal",
+		"Theme - Spacegray",
+		"Twig",
+		"Yii Framework Docs Search"
+	]
+}

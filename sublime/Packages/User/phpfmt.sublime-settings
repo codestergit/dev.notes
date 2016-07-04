@@ -1,0 +1,13 @@
+{
+	"autocomplete": false,
+	"format_on_save": false,
+	"passes":
+	[
+		"ReindentSwitchBlocks"
+	],
+	"php_bin": "/Applications/XAMPP/xamppfiles/bin/php",
+	"psr": true,
+	"psr1": true,
+	"psr2": false,
+	"version": 4
+}

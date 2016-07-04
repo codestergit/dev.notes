@@ -18,4 +18,5 @@ Defaults requiretty修改为 #Defaults requiretty， 表示不需要控制终端
 如，增加行：apache ALL=(ALL) NOPASSWD: /usr/bin/svn
 注：NOPASSWD可以使在命令执行时不需要交互输入apache用户的密码 
 
-
+ssh-copy-id
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@ip

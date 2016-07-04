@@ -1,0 +1,1884 @@
+
+** 2015-08-05 09:51:08.376296 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2015-12-31 18:11:38.543145 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2015-12-31 18:28:48.344042 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2015-12-31 18:38:27.849945 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2016-01-05 09:19:57.124637 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+
+** 2016-01-05 09:21:53.246028 **:
+MarGo: Missing required environment variables: GOPATH
+See the `Quirks` section of USAGE.md for info
+--------------------------------
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+margo: 2016/03/24 22:18:17 broker.go:105: gocode_complete#mg9.autoken.69a7ff64-4871-45ba-8b3d-f89c3f997b29 PANIC: runtime error: slice bounds out of range
+goroutine 67 [running]:
+main.(*Broker).call.func1(0xc8202c2ec0, 0xc820096ee0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820100880, 0xc82012dd00, 0xff, 0x100, 0xc8202c2fc0, 0x16, 0xffffffffffffffff, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:247 +0xa8f
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200ba0b0, 0xc8202bcf00, 0x0, 0x0, 0xc8202bcf20, 0xd, 0xc8200c6f80, 0x5, 0x8, 0xc82012dd00, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc8200c6e00, 0xc82012dd00, 0xff, 0x100, 0xc8202c2fc0, 0x16, 0xffffffffffffffff, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc8200c6e00, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc820096ee0, 0xc8202c2ec0, 0xaa8540, 0xc8200c6e00)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0xc8202bced0)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc8200c8872, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x2d8, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x8, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82010e240)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82010e240, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82010e240, 0xc82010e30a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc820096ee0, 0xc82010e300, 0xc820096e00)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc820096ee0, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 33 [chan receive, 22 minutes]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc82010a150)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 34 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 35 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 36 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc820096ee0, 0xc820104b80)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 37 [chan receive, 23 minutes]:
+main.main.func2(0xc820096ee0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 39 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 40 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 41 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 42 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 43 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 44 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 45 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 46 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 47 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 48 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 65 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 66 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 68 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 69 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 70 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 71 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 72 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 73 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 74 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-24 22:18:17.039051 **:
+GsComplete: broker: gocode_complete#mg9.autoken.69a7ff64-4871-45ba-8b3d-f89c3f997b29 PANIC
+--------------------------------
+margo: 2016/03/24 22:18:37 broker.go:105: gocode_complete#mg9.autoken.efbb06cc-9e2b-4455-822d-d0899a790a25 PANIC: runtime error: slice bounds out of range
+goroutine 41 [running]:
+main.(*Broker).call.func1(0xc820082e80, 0xc820096ee0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820100880, 0xc820074d80, 0x117, 0x120, 0xc820082f60, 0x16, 0xffffffffffffffff, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:247 +0xa8f
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200ba0b0, 0xc82000ea00, 0x0, 0x0, 0xc82000ea10, 0xd, 0xc82007f180, 0x5, 0x8, 0xc820074d80, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc82007f100, 0xc820074d80, 0x117, 0x120, 0xc820082f60, 0x16, 0xffffffffffffffff, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc82007f100, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc820096ee0, 0xc820082e80, 0xaa8540, 0xc82007f100)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0xc82000e9f0)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc82025228b, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x8f34b8, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x8, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82010e240)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82010e240, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82010e240, 0xc82010e30a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc820096ee0, 0xc82010e300, 0xc820096e00)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc820096ee0, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 33 [chan receive, 23 minutes]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc82010a150)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 34 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 35 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 36 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc820096ee0, 0xc820104b80)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 37 [chan receive, 23 minutes]:
+main.main.func2(0xc820096ee0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 39 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 40 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 42 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 43 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 44 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 45 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 46 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 47 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 48 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 65 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 66 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 67 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 68 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 69 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 70 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 71 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 72 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 73 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 74 [chan receive]:
+main.(*Broker).worker(0xc820096ee0, 0xc820104bd0, 0xc82010e300)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-24 22:18:37.393800 **:
+GsComplete: broker: gocode_complete#mg9.autoken.efbb06cc-9e2b-4455-822d-d0899a790a25 PANIC
+--------------------------------
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+margo: 2016/03/26 13:59:05 broker.go:105: gocode_complete#mg9.autoken.574edb12-e784-4a82-901f-fa9dcec8588d PANIC: runtime error: slice bounds out of range
+goroutine 46 [running]:
+main.(*Broker).call.func1(0xc820346cc0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.collect_package_imports(0xc820346da0, 0x14, 0xc820219ba0, 0x1, 0x1, 0xc820088000, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:33 +0x517
+gosubli.me/something-borrowed/gocode.(*auto_complete_file).process_data(0xc82000abd0, 0xc820347380, 0x17, 0x17)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletefile.go:76 +0x29d
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820017f40, 0xc820346e00, 0x16, 0x20, 0xc820346da0, 0x14, 0x15, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:253 +0x2a2
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200fc8f0, 0xc820218c00, 0x0, 0x0, 0xc820218cb0, 0xd, 0xc8200c6f80, 0x5, 0x8, 0xc820346e00, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc8200c6e80, 0xc820346e00, 0x16, 0x20, 0xc820346da0, 0x14, 0x15, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc8200c6e80, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc820216000, 0xc820346cc0, 0xaa84b0, 0xc8200c6e80)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0xc820218c70)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc8202447b0, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x1d3, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x8, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82001c4e0)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82001c4e0, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82001c4e0, 0xc82001c50a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc820216000, 0xc82001c5a0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc820216000, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 19 [chan receive]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc82002e1b8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 20 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 21 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 34 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc820216000, 0xc820218000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 35 [chan receive, 55 minutes]:
+main.main.func2(0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 36 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 37 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 38 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 39 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 40 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 41 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 42 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 43 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 44 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 45 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 47 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 48 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 49 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 50 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 51 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 52 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 53 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-26 13:59:05.114593 **:
+GsComplete: broker: gocode_complete#mg9.autoken.574edb12-e784-4a82-901f-fa9dcec8588d PANIC
+--------------------------------
+margo: 2016/03/26 13:59:05 broker.go:105: gocode_complete#mg9.autoken.16346c28-2bff-4624-83d9-8bbf4622547d PANIC: runtime error: slice bounds out of range
+goroutine 47 [running]:
+main.(*Broker).call.func1(0xc820346060, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.collect_package_imports(0xc8203461a0, 0x14, 0xc820218e50, 0x1, 0x1, 0xc820088000, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:33 +0x517
+gosubli.me/something-borrowed/gocode.(*auto_complete_file).process_data(0xc82000abd0, 0xc820346760, 0x19, 0x19)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletefile.go:76 +0x29d
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820017f40, 0xc8203461e0, 0x18, 0x20, 0xc8203461a0, 0x14, 0x15, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:253 +0x2a2
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200fc8f0, 0xc820011a00, 0x0, 0x0, 0xc820011a00, 0xd, 0xc8200c0a00, 0x5, 0x8, 0xc8203461e0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc8200c0980, 0xc8203461e0, 0x18, 0x20, 0xc8203461a0, 0x14, 0x15, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc8200c0980, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc820216000, 0xc820346060, 0xaa84b0, 0xc8200c0980)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0xc8200117d0)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc8202443b0, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x1d5, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x8, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82001c4e0)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82001c4e0, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82001c4e0, 0xc82001c50a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc820216000, 0xc82001c5a0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc820216000, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 19 [chan receive]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc82002e1b8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 20 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 21 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 34 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc820216000, 0xc820218000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 35 [chan receive, 55 minutes]:
+main.main.func2(0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 36 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 37 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 38 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 39 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 40 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 41 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 42 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 43 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 44 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 45 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 46 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 48 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 49 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 50 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 51 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 52 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 53 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-26 13:59:05.355630 **:
+GsComplete: broker: gocode_complete#mg9.autoken.16346c28-2bff-4624-83d9-8bbf4622547d PANIC
+--------------------------------
+margo: 2016/03/27 16:00:55 broker.go:105: gocode_complete#mg9.autoken.17cfd4f1-875a-44c7-82cf-c9464e507d0a PANIC: interface conversion: ast.Expr is *ast.BadExpr, not *ast.Ident
+goroutine 52 [running]:
+main.(*Broker).call.func1(0xc82042efa0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.method_of(0xae3680, 0xc820407230, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/decl.go:330 +0x21e
+gosubli.me/something-borrowed/gocode.append_to_top_decls.func1(0xc8202ff090)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:128 +0x205
+gosubli.me/something-borrowed/gocode.foreach_decl(0xae3680, 0xc820407230, 0xc82032d6f8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/decl.go:1312 +0x257
+gosubli.me/something-borrowed/gocode.append_to_top_decls(0xc820407260, 0xae3680, 0xc820407230, 0xc820353690)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:147 +0x59
+gosubli.me/something-borrowed/gocode.(*auto_complete_file).process_data(0xc82000abd0, 0xc8200973b0, 0x61, 0x61)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletefile.go:86 +0x58e
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820017f40, 0xc8202f1380, 0x60, 0x60, 0xc82042f080, 0x15, 0x4a, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:253 +0x2a2
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200fc8f0, 0xc820352c00, 0x0, 0x0, 0xc820352c80, 0xd, 0xc820399b00, 0x5, 0x8, 0xc8202f1380, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc820399980, 0xc8202f1380, 0x60, 0x60, 0xc82042f080, 0x15, 0x4a, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc820399980, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc820216000, 0xc82042efa0, 0xaa84b0, 0xc820399980)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0x600)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc820408d57, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x22a, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0xc820442b00, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82001c4e0)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82001c4e0, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82001c4e0, 0xc82001c50a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc820216000, 0xc82001c5a0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc820216000, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 19 [chan receive]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc82002e1b8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 20 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 21 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 34 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc820216000, 0xc820218000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 35 [chan receive, 1617 minutes]:
+main.main.func2(0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 36 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 37 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 38 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 39 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 40 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 41 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 42 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 43 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 44 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 45 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 46 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 47 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 48 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 49 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 50 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 51 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 53 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-27 16:00:55.878342 **:
+GsComplete: broker: gocode_complete#mg9.autoken.17cfd4f1-875a-44c7-82cf-c9464e507d0a PANIC
+--------------------------------
+margo: 2016/03/27 16:00:56 broker.go:105: gocode_complete#mg9.autoken.0ec4da5f-a681-485a-924e-4964b11440fc PANIC: interface conversion: ast.Expr is *ast.BadExpr, not *ast.Ident
+goroutine 27 [running]:
+main.(*Broker).call.func1(0xc820400080, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.method_of(0xae3680, 0xc8200fe5d0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/decl.go:330 +0x21e
+gosubli.me/something-borrowed/gocode.append_to_top_decls.func1(0xc8200c8370)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:128 +0x205
+gosubli.me/something-borrowed/gocode.foreach_decl(0xae3680, 0xc8200fe5d0, 0xc8202c96f8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/decl.go:1312 +0x257
+gosubli.me/something-borrowed/gocode.append_to_top_decls(0xc8200ff4a0, 0xae3680, 0xc8200fe5d0, 0xc8202ac8c0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:147 +0x59
+gosubli.me/something-borrowed/gocode.(*auto_complete_file).process_data(0xc82000abd0, 0xc8202de380, 0x62, 0x62)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletefile.go:86 +0x58e
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820017f40, 0xc8202425b0, 0x61, 0x70, 0xc820400200, 0x15, 0x4a, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:253 +0x2a2
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200fc8f0, 0xc820011600, 0x0, 0x0, 0xc820011690, 0xd, 0xc820300280, 0x5, 0x8, 0xc8202425b0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc820300180, 0xc8202425b0, 0x61, 0x70, 0xc820400200, 0x15, 0x4a, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc820300180, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc820216000, 0xc820400080, 0xaa84b0, 0xc820300180)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0x600)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc8203fa157, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x22b, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0xc820076f80, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82001c4e0)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82001c4e0, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82001c4e0, 0xc82001c50a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc820216000, 0xc82001c5a0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc820216000, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 19 [chan receive]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc82002e1b8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 20 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 21 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 34 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc820216000, 0xc820218000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 35 [chan receive, 1617 minutes]:
+main.main.func2(0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 36 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 37 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 38 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 39 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 40 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 41 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 42 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 43 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 44 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 45 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 46 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 47 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 48 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 49 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 50 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 51 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 52 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 53 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-27 16:00:56.009841 **:
+GsComplete: broker: gocode_complete#mg9.autoken.0ec4da5f-a681-485a-924e-4964b11440fc PANIC
+--------------------------------
+margo: 2016/03/27 16:00:56 broker.go:105: gocode_complete#mg9.autoken.d71d7fa7-c6fa-42d4-89df-a146ea63630a PANIC: interface conversion: ast.Expr is *ast.BadExpr, not *ast.Ident
+goroutine 53 [running]:
+main.(*Broker).call.func1(0xc8204000a0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.method_of(0xae3680, 0xc8200ffef0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/decl.go:330 +0x21e
+gosubli.me/something-borrowed/gocode.append_to_top_decls.func1(0xc8200c85a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:128 +0x205
+gosubli.me/something-borrowed/gocode.foreach_decl(0xae3680, 0xc8200ffef0, 0xc82003d6f8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/decl.go:1312 +0x257
+gosubli.me/something-borrowed/gocode.append_to_top_decls(0xc8200fff50, 0xae3680, 0xc8200ffef0, 0xc8202acf40)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:147 +0x59
+gosubli.me/something-borrowed/gocode.(*auto_complete_file).process_data(0xc82000abd0, 0xc8202de700, 0x63, 0x63)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletefile.go:86 +0x58e
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820017f40, 0xc820243ea0, 0x62, 0x70, 0xc820400240, 0x15, 0x4a, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:253 +0x2a2
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200fc8f0, 0xc820011700, 0x0, 0x0, 0xc820011780, 0xd, 0xc820300480, 0x5, 0x8, 0xc820243ea0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc820300200, 0xc820243ea0, 0x62, 0x70, 0xc820400240, 0x15, 0x4a, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc820300200, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc820216000, 0xc8204000a0, 0xaa84b0, 0xc820300200)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0x600)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc82042a157, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x22c, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0xc820076f80, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82001c4e0)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82001c4e0, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82001c4e0, 0xc82001c50a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc820216000, 0xc82001c5a0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc820216000, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 19 [chan receive]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc82002e1b8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 20 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 21 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 34 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc820216000, 0xc820218000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 35 [chan receive, 1617 minutes]:
+main.main.func2(0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 36 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 37 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 38 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 39 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 40 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 41 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 42 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 43 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 44 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 45 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 46 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 47 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 48 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 49 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 50 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 51 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 52 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-27 16:00:56.086639 **:
+GsComplete: broker: gocode_complete#mg9.autoken.d71d7fa7-c6fa-42d4-89df-a146ea63630a PANIC
+--------------------------------
+margo: 2016/03/27 16:01:35 broker.go:105: gocode_complete#mg9.autoken.e278ad1b-5a9d-402e-9f8f-2d2141bdef54 PANIC: interface conversion: ast.Expr is *ast.BadExpr, not *ast.Ident
+goroutine 48 [running]:
+main.(*Broker).call.func1(0xc820431520, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.method_of(0xae3680, 0xc820407d70, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/decl.go:330 +0x21e
+gosubli.me/something-borrowed/gocode.append_to_top_decls.func1(0xc820247680)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:128 +0x205
+gosubli.me/something-borrowed/gocode.foreach_decl(0xae3680, 0xc820407d70, 0xc8203b36f8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/decl.go:1312 +0x257
+gosubli.me/something-borrowed/gocode.append_to_top_decls(0xc820407da0, 0xae3680, 0xc820407d70, 0xc820352c80)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:147 +0x59
+gosubli.me/something-borrowed/gocode.(*auto_complete_file).process_data(0xc82000abd0, 0xc820472c80, 0x95, 0x95)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletefile.go:86 +0x58e
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820017f40, 0xc820472be0, 0x94, 0xa0, 0xc8204302a0, 0x15, 0x82, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:253 +0x2a2
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200fc8f0, 0xc820352000, 0x0, 0x0, 0xc820352050, 0xd, 0xc820301a00, 0x5, 0x8, 0xc820472be0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc820301900, 0xc820472be0, 0x94, 0xa0, 0xc8204302a0, 0x15, 0x82, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc820301900, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc820216000, 0xc820431520, 0xaa84b0, 0xc820301900)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0x600)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc820322158, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x264, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0xc820470200, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82001c4e0)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82001c4e0, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82001c4e0, 0xc82001c50a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc820216000, 0xc82001c5a0, 0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc820216000, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 19 [chan receive, 1 minutes]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc82002e1b8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 20 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 21 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 34 [sleep]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc820216000, 0xc820218000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 35 [chan receive, 1617 minutes]:
+main.main.func2(0xc820216000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 26 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 27 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 36 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 37 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 38 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 39 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 40 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 41 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 42 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 43 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 44 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 45 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 46 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 47 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 49 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 50 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 51 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 52 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 53 [chan receive]:
+main.(*Broker).worker(0xc820216000, 0xc820011d40, 0xc82001c5a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-27 16:01:35.785301 **:
+GsComplete: broker: gocode_complete#mg9.autoken.e278ad1b-5a9d-402e-9f8f-2d2141bdef54 PANIC
+--------------------------------
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+margo: 2016/03/30 16:20:17 broker.go:105: gocode_complete#mg9.autoken.0b5ec892-61a8-4b0d-a22c-b4e8a486aa5f PANIC: runtime error: slice bounds out of range
+goroutine 60 [running]:
+main.(*Broker).call.func1(0xc8200c5f40, 0xc82013a000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:104 +0xb2
+gosubli.me/something-borrowed/gocode.collect_package_imports(0xc8200c5fc0, 0x14, 0xc8202ad530, 0x1, 0x1, 0xc82010a000, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/declcache.go:33 +0x517
+gosubli.me/something-borrowed/gocode.(*auto_complete_file).process_data(0xc82000abd0, 0xc8201014a0, 0x56, 0x56)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletefile.go:76 +0x29d
+gosubli.me/something-borrowed/gocode.(*auto_complete_context).apropos(0xc820086880, 0xc820101440, 0x55, 0x60, 0xc8200c5fc0, 0x14, 0x17, 0x0, 0x0, 0x0, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/autocompletecontext.go:253 +0x2a2
+gosubli.me/something-borrowed/gocode.(*margoState).Complete(0xc8200980b0, 0xc8202ac700, 0x0, 0x0, 0xc8202ac770, 0xd, 0xc82007ed00, 0x5, 0x8, 0xc820101440, ...)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+main.(*mGocode).completions(0xc82007ef00, 0xc820101440, 0x55, 0x60, 0xc8200c5fc0, 0x14, 0x17, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:95 +0x1c2
+main.(*mGocode).Call(0xc82007ef00, 0x0, 0x0, 0x0, 0x0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/m_gocode.go:76 +0x7e6
+main.(*Broker).call(0xc82013a000, 0xc8200c5f40, 0xae3170, 0xc82007ef00)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:113 +0x95
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:188 +0xdb
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82001b000, 0x1000, 0x0, 0x0, 0x600)
+	/usr/local/go/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82001b000, 0x1000, 0x1000, 0xc82012edaf, 0x0, 0x0)
+	/usr/local/go/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82001b000, 0x1000, 0x1000, 0x8f3000, 0x0, 0x0)
+	/usr/local/go/src/syscall/syscall_unix.go:160 +0x4d
+os.(*File).read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0x7b, 0x0, 0x0)
+	/usr/local/go/src/os/file_unix.go:211 +0x75
+os.(*File).Read(0xc82002e008, 0xc82001b000, 0x1000, 0x1000, 0xc8200c0680, 0x0, 0x0)
+	/usr/local/go/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc820100240)
+	/usr/local/go/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc820100240, 0xa, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc820100240, 0xc82001c20a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/bufio/bufio.go:406 +0xa9
+main.(*Broker).accept(0xc82013a000, 0xc82001c2a0, 0xc82013a000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:128 +0x44
+main.(*Broker).Loop(0xc82013a000, 0x690001)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:213 +0x33b
+main.main()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:140 +0xbdb
+
+goroutine 17 [chan receive, 40 minutes]:
+gosubli.me/something-borrowed/gocode.new_file_reader.func1(0xc8200b6150)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:162 +0x7b
+created by gosubli.me/something-borrowed/gocode.new_file_reader
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/something-borrowed/gocode/utils.go:166 +0x88
+
+goroutine 18 [chan receive]:
+main.init.2.func1()
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:114 +0x85
+created by main.init.2
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/g_autoinst.go:117 +0x2b
+
+goroutine 19 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.startOomKiller.func1(0x3e8)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:31 +0x429
+created by main.startOomKiller
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/oom.go:33 +0x35
+
+goroutine 12 [sleep, 1 minutes]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/go/src/runtime/time.go:59 +0xf9
+main.main.func1(0x6fc23ac00, 0xc82013a000, 0xc820014770)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:122 +0x33
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:131 +0xb7f
+
+goroutine 13 [chan receive, 52 minutes]:
+main.main.func2(0xc82013a000)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:135 +0x94
+created by main.main
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/main.go:138 +0xba4
+
+goroutine 15 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 16 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 49 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 50 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 51 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 52 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 53 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 54 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 55 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 56 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 57 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 58 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 59 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 61 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 62 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 63 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 64 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 65 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+goroutine 66 [chan receive]:
+main.(*Broker).worker(0xc82013a000, 0xc820014860, 0xc82001c2a0)
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:187 +0x81
+created by main.(*Broker).Loop
+	/Users/taoanton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/gosubli.me/margo/broker.go:209 +0x30a
+
+
+
+** 2016-03-30 16:20:17.603005 **:
+GsComplete: broker: gocode_complete#mg9.autoken.0b5ec892-61a8-4b0d-a22c-b4e8a486aa5f PANIC
+--------------------------------
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64:/usr/local/bin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64:/usr/local/bin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64:/usr/local/bin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin", InstallSuffix:""}
+Gocode pkg: "."
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/go/pkg/darwin_amd64:/usr/local/go/bin/pkg/darwin_amd64:/usr/bin/pkg/darwin_amd64:/bin/pkg/darwin_amd64:/usr/sbin/pkg/darwin_amd64:/sbin/pkg/darwin_amd64:/usr/local/bin/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/go", GOPATH:"/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin", InstallSuffix:""}

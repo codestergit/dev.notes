@@ -1,0 +1,47 @@
+{
+	"9o.hist./app/go/learn":
+	[
+		"go run const.go",
+		"go run var.go",
+		"go run oop1.go",
+		"go run struct.go",
+		"go run struct2.go",
+		"go run oop3.go",
+		"go run oop4.go",
+		"go run oop.methed.go",
+		"pwd",
+		"echo $GOROOT",
+		"go run oop5.go",
+		"echo $GOPATH"
+	],
+	"9o.hist./app/go/src":
+	[
+		"go build a.go",
+		"go run a.go",
+		"go run beego.go",
+		"go build -o go run beego.go beego.go"
+	],
+	"9o.hist./app/go/src/learn":
+	[
+		"go run pointer.go",
+		"ll",
+		"go run echo4.go",
+		"go run echo4.go 12",
+		"go run echo4.go 1 2 a aa",
+		"go run echo4.go -help",
+		"go run echo4.go -s - a b c",
+		"go run echo4.go -n -s - a b c",
+		"go run echo4.go -n  a b c",
+		"go run echo5.go",
+		"go run 2.7.go",
+		"go run for.go",
+		"go run str.go",
+		"go run str2.go",
+		"go run basename2.go",
+		"go run comma.go",
+		"go run array.go"
+	],
+	"ann": "a16.06.02-1",
+	"install_version": "r16.06.02-1",
+	"version": "r16.06.02-1"
+}
