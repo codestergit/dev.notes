@@ -20,3 +20,9 @@ Defaults requiretty修改为 #Defaults requiretty， 表示不需要控制终端
 
 ssh-copy-id
 ssh-copy-id -i ~/.ssh/id_rsa.pub root@ip
+
+
+vi编辑是没有权限需要sudo
+```
+:w !sudo tee %
+```
