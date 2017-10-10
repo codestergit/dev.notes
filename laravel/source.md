@@ -15,7 +15,7 @@ $this->app->bind('HelpSpot\API', function ($app) {
 ```
 注意，我们将获得的容器本身作为参数传递到解析器中，这样就可以使用容器来解决绑定对象对容器的子依赖。  
 `singleton`绑定一个单例  
-`instance`绑定实例  
+`instance`绑定实例   
 
 
 ## Facades
